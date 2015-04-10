@@ -59,7 +59,7 @@ class DatatableRenderer implements RenderInterface
     /**
      * Render the DataTable instantiation javascript code
      */
-    protected function renderJs()
+    public function renderJs()
     {
         $js = "
 			<script type=\"text/javascript\">
