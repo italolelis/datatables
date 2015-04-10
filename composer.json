@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "easyframework/collections": "~3.2",
+    "easyframework/collections": "~4.0",
     "symfony/property-access": "~2.6"
   },
   "require-dev": {
