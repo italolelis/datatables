@@ -1,0 +1,37 @@
+{
+  "name": "italolelis/datatables",
+  "description": "A PHP wrapper for DataTables (http://www.datatables.net) plugin for jQuery.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "datatables",
+    "grid",
+    "wrapper"
+  ],
+  "homepage": "https://github.com/italolelis/datatables",
+  "authors": [
+    {
+      "name": "Ítalo Lelis de Vietro",
+      "email": "italolelis@gmail.com"
+    }
+  ],
+  "require": {
+    "easyframework/collections": "~3.2",
+    "symfony/property-access": "~2.6"
+  },
+  "require-dev": {
+    "php": ">=5.4.0",
+    "phpunit/phpunit": "~4.5",
+    "symfony/var-dumper": "~2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datatable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Datatable\\": "tests/"
+    }
+  }
+}
