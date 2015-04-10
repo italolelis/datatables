@@ -20,7 +20,7 @@ class DatatableRenderer implements RenderInterface
 
     public function render()
     {
-        return $this->renderTable() . $this->renderJs();
+        return $this->renderTable();
     }
 
     /**
