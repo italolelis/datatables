@@ -44,12 +44,23 @@ class Datatable
      * @param DataResult $result
      * @return string
      */
-    public function renderJson($result = null)
+    public function toArray($result)
     {
         if (!$result instanceof DataResult) {
             $result = new DataResult($result, count($result));
         }
         return $this->renderReturnData($result, $this->request);
+    }
+
+    /**
+     * Get the JSON formatted date for a AJAX request
+     *
+     * @param DataResult $result
+     * @return string
+     */
+    public function toJson($result)
+    {
+        return json_encode($this->toArray($result));
     }
 
     /**
