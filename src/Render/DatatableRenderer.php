@@ -325,6 +325,11 @@ class DatatableRenderer implements RenderInterface
         if (!is_null($this->config->getLanguageConfig()->getUrl())) {
             $options["sUrl"] = $this->config->getLanguageConfig()->getUrl();
         }
+
+        if (!is_null($this->config->getLanguageConfig()->getProcessing())) {
+            $options["sProcessing"] = $this->config->getLanguageConfig()->getProcessing();
+        }
+        
         return $options;
     }
 }
