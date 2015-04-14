@@ -21,6 +21,7 @@ class LanguageConfig
     protected $search;
     protected $url;
     protected $zeroRecords;
+    protected $processing;
 
     public function getPaginateFirst()
     {
@@ -162,6 +163,17 @@ class LanguageConfig
     public function setZeroRecords($zeroRecords)
     {
         $this->zeroRecords = $zeroRecords;
+        return $this;
+    }
+
+    public function getProcessing()
+    {
+        return $this->processing;
+    }
+
+    public function setProcessing($processing)
+    {
+        $this->processing = $processing;
         return $this;
     }
 }
