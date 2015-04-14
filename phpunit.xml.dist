@@ -28,7 +28,7 @@
     </filter>
     
     <logging>
-        <log type="coverage-html" target="build/coverage" title="Collection Coverage" charset="UTF-8" yui="true" highlight="true" />
+        <log type="coverage-html" target="build/coverage" title="Datatables Coverage" charset="UTF-8" yui="true" highlight="true" />
         <log type="coverage-clover" target="build/logs/clover.xml"/>
     </logging>
 </phpunit>

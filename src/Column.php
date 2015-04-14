@@ -2,7 +2,10 @@
 
 namespace Datatable;
 
-
+/**
+ * Represents a datatable column
+ * @author Ítalo Lelis de Vietro <italolelis@gmail.com>
+ */
 class Column
 {
     /**

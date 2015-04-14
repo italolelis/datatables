@@ -2,7 +2,10 @@
 
 namespace Datatable;
 
-
+/**
+ * Represents a datatable language configuration
+ * @author Ítalo Lelis de Vietro <italolelis@gmail.com>
+ */
 class LanguageConfig
 {
     protected $paginateFirst;

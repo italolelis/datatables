@@ -69,13 +69,13 @@ class Datatable
             }
             $rows[] = $row;
         }
-        $data = array(
+        $data = [
             'iTotalRecords' => $result->getNumTotalResults(),
             'iTotalDisplayRecords' => !is_null($result->getNumFilteredResults()) ?
                 $result->getNumFilteredResults() : $result->getNumTotalResults(),
             'aaData' => $rows,
             'sEcho' => $request->getEcho(),
-        );
+        ];
         return $data;
     }
 

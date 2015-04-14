@@ -2,10 +2,13 @@
 
 namespace Datatable;
 
-
 use Collections\ArrayList;
 use Collections\CollectionInterface;
 
+/**
+ * Represents the datatables configuration
+ * @author Ítalo Lelis de Vietro <italolelis@gmail.com>
+ */
 class Config
 {
     /**
@@ -99,6 +102,9 @@ class Config
         return $this;
     }
 
+    /**
+     * @return ArrayList
+     */
     public function getColumns()
     {
         return $this->columns;
@@ -302,12 +308,15 @@ class Config
         return $this->paginationType;
     }
 
-    public function setLanguageConfig(DataTable_LanguageConfig $languageConfig)
+    public function setLanguageConfig(LanguageConfig $languageConfig)
     {
         $this->languageConfig = $languageConfig;
         return $this;
     }
 
+    /**
+     * @return LanguageConfig
+     */
     public function getLanguageConfig()
     {
         return $this->languageConfig;

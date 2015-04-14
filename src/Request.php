@@ -2,9 +2,12 @@
 
 namespace Datatable;
 
-
 use Collections\Dictionary;
 
+/**
+ * Represents datatable request
+ * @author Ítalo Lelis de Vietro <italolelis@gmail.com>
+ */
 class Request
 {
     /**

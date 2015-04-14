@@ -2,9 +2,12 @@
 
 namespace Datatable\Render;
 
-
 use Datatable\Config;
 
+/**
+ * Responsible for rendering the datatable HTML
+ * @author Ítalo Lelis de Vietro <italolelis@gmail.com>
+ */
 class DatatableRenderer implements RenderInterface
 {
     /**
@@ -78,7 +81,7 @@ class DatatableRenderer implements RenderInterface
      */
     protected function renderDataTableOptions()
     {
-        $options = array();
+        $options = [];
         $options["bPaginate"] = $this->config->isPaginationEnabled();
         $options["bLengthChange"] = $this->config->isLengthChangeEnabled();
         $options["bProcessing"] = $this->config->isProcessingEnabled();
@@ -216,12 +219,12 @@ class DatatableRenderer implements RenderInterface
     {
         $columns = array();
         foreach ($this->config->getColumns() as $column) {
-            $tempColumn = array(
+            $tempColumn = [
                 "bSortable" => $column->isSortable(),
                 "sName" => $column->getName(),
                 "bVisible" => $column->isVisible(),
                 "bSearchable" => $column->isSearchable(),
-            );
+            ];
             if (!is_null($column->getWidth())) {
                 $tempColumn['sWidth'] = $column->getWidth();
             }

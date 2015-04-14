@@ -2,6 +2,10 @@
 
 namespace Datatable;
 
+/**
+ * Represents a result to datatabes
+ * @author Ítalo Lelis de Vietro <italolelis@gmail.com>
+ */
 class DataResult
 {
     /**
@@ -12,6 +16,7 @@ class DataResult
      * @var array
      */
     protected $data;
+
     /**
      * The total number of results
      *
@@ -21,6 +26,7 @@ class DataResult
      * @var integer
      */
     protected $numTotalResults;
+
     /**
      * The total number of filtered results
      *
@@ -28,6 +34,12 @@ class DataResult
      */
     protected $numFilteredResults;
 
+    /**
+     * Initialize an instance of DataResult
+     * @param array $data The data to be returned
+     * @param int $numTotalResults The total number of records
+     * @param int $numFilteredResults The total number of filtered records
+     */
     public function __construct($data, $numTotalResults, $numFilteredResults = null)
     {
         $this->data = $data;
