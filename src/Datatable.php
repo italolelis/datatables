@@ -104,7 +104,13 @@ class Datatable
     protected function getDataForColumn($object, Column $column)
     {
         $accessor = PropertyAccess::createPropertyAccessor();
-        return $accessor->getValue($object, $column->getName());
+
+        $property = $column->getName();
+        if (is_array($object)) {
+            $property = "[{$property}]";
+        }
+
+        return $accessor->getValue($object, $property);
     }
 
     /**
