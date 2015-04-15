@@ -135,13 +135,13 @@ class Column
         return $this->isVisible;
     }
 
-    public function setIsVisible($isVisible)
+    public function setVisible($isVisible)
     {
         $this->isVisible = $isVisible;
         return $this;
     }
 
-    public function setIsSortable($isSortable)
+    public function setSortable($isSortable)
     {
         $this->isSortable = $isSortable;
         return $this;
@@ -152,7 +152,7 @@ class Column
         return $this->isSortable;
     }
 
-    public function setIsDefaultSort($isDefaultSort)
+    public function setDefaultSort($isDefaultSort)
     {
         $this->isDefaultSort = $isDefaultSort;
         return $this;
@@ -201,7 +201,7 @@ class Column
         return $this->isSearchable;
     }
 
-    public function setIsSearchable($isSearchable)
+    public function setSearchable($isSearchable)
     {
         $this->isSearchable = $isSearchable;
         return $this;

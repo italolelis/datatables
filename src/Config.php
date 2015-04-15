@@ -59,12 +59,14 @@ class Config
     protected $isSaveStateEnabled = false;
     protected $cookiePrefix;
     protected $stripClasses = ['odd', 'even'];
+
     /**
      * see http://datatables.net/usage/options#sDom
      *
      * @var string
      */
     protected $dom;
+
     /**
      * The maximum number of rows to render in HTML
      * when table is set to use static (non-ajax) data
@@ -121,7 +123,7 @@ class Config
         return $this->displayLength;
     }
 
-    public function setIsPaginationEnabled($isPaginationEnabled)
+    public function setPaginationEnabled($isPaginationEnabled)
     {
         $this->isPaginationEnabled = $isPaginationEnabled;
         return $this;
@@ -132,7 +134,7 @@ class Config
         return $this->isPaginationEnabled;
     }
 
-    public function setIsLengthChangeEnabled($isLengthChangeEnabled)
+    public function setLengthChangeEnabled($isLengthChangeEnabled)
     {
         $this->isLengthChangeEnabled = $isLengthChangeEnabled;
         return $this;
@@ -143,7 +145,7 @@ class Config
         return $this->isLengthChangeEnabled;
     }
 
-    public function setIsFilterEnabled($isFilterEnabled)
+    public function setFilterEnabled($isFilterEnabled)
     {
         $this->isFilterEnabled = $isFilterEnabled;
         return $this;
@@ -154,7 +156,7 @@ class Config
         return $this->isFilterEnabled;
     }
 
-    public function setIsInfoEnabled($isInfoEnabled)
+    public function setInfoEnabled($isInfoEnabled)
     {
         $this->isInfoEnabled = $isInfoEnabled;
         return $this;
@@ -165,7 +167,7 @@ class Config
         return $this->isInfoEnabled;
     }
 
-    public function setIsSortEnabled($isSortEnabled)
+    public function setSortEnabled($isSortEnabled)
     {
         $this->isSortEnabled = $isSortEnabled;
         return $this;
@@ -187,7 +189,7 @@ class Config
         return $this->ajaxSource;
     }
 
-    public function setIsServerSideEnabled($isServerSideEnabled)
+    public function setServerSideEnabled($isServerSideEnabled)
     {
         $this->isServerSideEnabled = $isServerSideEnabled;
         return $this;
@@ -198,7 +200,7 @@ class Config
         return $this->isServerSideEnabled;
     }
 
-    public function setIsProcessingEnabled($isProcessingEnabled)
+    public function setProcessingEnabled($isProcessingEnabled)
     {
         $this->isProcessingEnabled = $isProcessingEnabled;
         return $this;
@@ -209,7 +211,7 @@ class Config
         return $this->isProcessingEnabled;
     }
 
-    public function setIsJQueryUIEnabled($isJQueryUIEnabled)
+    public function setJQueryUIEnabled($isJQueryUIEnabled)
     {
         $this->isJQueryUIEnabled = $isJQueryUIEnabled;
         return $this;
@@ -220,7 +222,7 @@ class Config
         return $this->isJQueryUIEnabled;
     }
 
-    public function setIsAutoWidthEnabled($isAutoWidthEnabled)
+    public function setAutoWidthEnabled($isAutoWidthEnabled)
     {
         $this->isAutoWidthEnabled = $isAutoWidthEnabled;
         return $this;
@@ -231,7 +233,7 @@ class Config
         return $this->isAutoWidthEnabled;
     }
 
-    public function setIsScrollCollapseEnabled($isScrollCollapseEnabled)
+    public function setScrollCollapseEnabled($isScrollCollapseEnabled)
     {
         $this->isScrollCollapseEnabled = $isScrollCollapseEnabled;
         return $this;
@@ -327,7 +329,7 @@ class Config
         return $this->isScrollInfiniteEnabled;
     }
 
-    public function setIsScrollInfiniteEnabled($isScrollInfiniteEnabled)
+    public function setScrollInfiniteEnabled($isScrollInfiniteEnabled)
     {
         $this->isScrollInfiniteEnabled = $isScrollInfiniteEnabled;
         return $this;
@@ -360,7 +362,7 @@ class Config
         return $this->isSaveStateEnabled;
     }
 
-    public function setIsSaveStateEnabled($isSaveStateEnabled)
+    public function setSaveStateEnabled($isSaveStateEnabled)
     {
         $this->isSaveStateEnabled = $isSaveStateEnabled;
         return $this;
