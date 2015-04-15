@@ -38,4 +38,4 @@ The MIT License (MIT). Please see [License File](https://github.com/italolelis/d
 ### Documentation
 
 More information can be found in the online documentation at
-http://datatables.readthedocs.org/.
+http://datatables.readthedocs.org/
