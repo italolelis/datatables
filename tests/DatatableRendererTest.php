@@ -7,8 +7,9 @@ use Datatable\Datatable;
 use Datatable\Render\RenderInterface;
 use Datatable\Request;
 
-class DatatableTest extends DatatablesTestCase
+class DatatableRendererTest extends DatatablesTestCase
 {
+
     public function testValidInstance()
     {
         $datatable = new Datatable($this->config);
