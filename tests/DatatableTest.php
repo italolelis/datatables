@@ -19,16 +19,16 @@ class DatatableTest extends DatatablesTestCase
         $this->config = new Config();
         $this->config->setClass("display")
             ->setDisplayLength(static::DISPLAY_LENGHT)
-            ->setIsPaginationEnabled(true)
-            ->setIsLengthChangeEnabled(true)
-            ->setIsFilterEnabled(true)
-            ->setIsInfoEnabled(true)
-            ->setIsSortEnabled(true)
-            ->setIsAutoWidthEnabled(true)
-            ->setIsScrollCollapseEnabled(false)
+            ->setPaginationEnabled(true)
+            ->setLengthChangeEnabled(true)
+            ->setFilterEnabled(true)
+            ->setInfoEnabled(true)
+            ->setSortEnabled(true)
+            ->setAutoWidthEnabled(true)
+            ->setScrollCollapseEnabled(false)
             ->setPaginationType(Config::PAGINATION_TYPE_FULL_NUMBERS)
-            ->setIsJQueryUIEnabled(false)
-            ->setIsServerSideEnabled(true)
+            ->setJQueryUIEnabled(false)
+            ->setServerSideEnabled(true)
             ->setAjaxSource('/list');
 
         $_GET['iDisplayLength'] = 10;
