@@ -2,6 +2,8 @@
 
 namespace Tests\Datatable;
 
+use Datatable\Config;
+
 abstract class DatatablesTestCase extends \PHPUnit_Framework_TestCase
 {
     protected $config;
