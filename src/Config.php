@@ -48,7 +48,11 @@ class Config
     protected $isScrollCollapseEnabled = false;
     protected $isScrollInfiniteEnabled = false;
     protected $class;
-    protected $lengthMenu = [10 => 10, 25 => 25, 50 => 50, 100 => 100];
+
+    /**
+     * @var ArrayList
+     */
+    protected $lengthMenu;
     protected $scrollX;
     protected $scrollY;
     protected $scrollLoadGap;
@@ -78,6 +82,7 @@ class Config
     public function __construct()
     {
         $this->columns = new ArrayList();
+        $this->lengthMenu = new ArrayList([10 => 10, 25 => 25, 50 => 50, 100 => 100]);
     }
 
     /**

@@ -144,7 +144,7 @@ class Request
     /**
      * Hydrate the current object from a $_GET, $_POST, or $_REQUEST array
      *
-     * @param array $request
+     * @param Dictionary $request
      * @return $this
      */
     public function createFromCollection(Dictionary $request)

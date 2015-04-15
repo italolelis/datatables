@@ -6,6 +6,9 @@ use Datatable\Config;
 
 abstract class DatatablesTestCase extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var Config
+     */
     protected $config;
     const DISPLAY_LENGHT = 10;
 
