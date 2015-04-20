@@ -34,7 +34,7 @@ class Response
      */
     public function toJson()
     {
-        return json_encode($this->toArray($this->data));
+        return json_encode($this->toArray());
     }
 
     /**
