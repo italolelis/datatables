@@ -1,8 +1,8 @@
 # Datatables
 
 [![Build Status](https://travis-ci.org/italolelis/datatables.svg?style=flat-square)](https://travis-ci.org/italolelis/datatables)
-[![Code Climate](https://img.shields.io/codeclimate/github/italolelis/datatables.svg?style=flat-square)](https://codeclimate.com/github/italolelis/datatables)
-[![Code Climate](https://img.shields.io/codeclimate/coverage/github/italolelis/datatables.svg?style=flat-square)](https://codeclimate.com/github/italolelis/datatables)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/italolelis/datatables.svg?style=flat-square)](https://scrutinizer-ci.com/g/italolelis/datatables/)
+[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/italolelis/datatables.svg?style=flat-square)](https://scrutinizer-ci.com/g/italolelis/datatables/)
 [![Latest Stable Version](http://img.shields.io/packagist/v/italolelis/datatables.svg?style=flat-square)](https://packagist.org/packages/italolelis/datatables)
 [![Downloads](https://img.shields.io/packagist/dt/italolelis/datatables.svg?style=flat-square)](https://packagist.org/packages/italolelis/datatables)
 
