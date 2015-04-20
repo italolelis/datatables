@@ -2,9 +2,7 @@
 
 namespace Tests\Datatable;
 
-use Datatable\Config;
 use Datatable\Datatable;
-use Datatable\Render\RenderInterface;
 use Datatable\Request;
 
 class DatatableTest extends DatatablesTestCase
@@ -52,12 +50,12 @@ class DatatableTest extends DatatablesTestCase
             'iTotalDisplayRecords' => 0,
             'aaData' => [],
             'sEcho' => 1
-        ], $datatable->toArray([]));
+        ], $datatable->process([])->toArray());
     }
 
     public function testRenderJson()
     {
         $datatable = new Datatable($this->config);
-        $this->assertJson('{"iTotalRecords":0,"iTotalDisplayRecords":0,"aaData":[],"sEcho":1}', $datatable->toJson([]));
+        $this->assertJson('{"iTotalRecords":0,"iTotalDisplayRecords":0,"aaData":[],"sEcho":1}', $datatable->process([])->toJson());
     }
 }

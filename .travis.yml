@@ -13,5 +13,8 @@ script:
  - phpunit --coverage-clover=coverage.clover --configuration ./phpunit.xml.dist ./tests
 
 after_script:
- - wget https://scrutinizer-ci.com/ocular.phar
- - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+  - vendor/bin/test-reporter
+
+addons:
+  code_climate:
+    repo_token: 8afb9574bf8d4fb355b569361b043087b45edde3eb6eb96cdc2fe9e0ddf64330

@@ -4,5 +4,5 @@ namespace Datatable\Render;
 
 interface RenderInterface
 {
-    public function render();
+    public function render($data = null);
 }

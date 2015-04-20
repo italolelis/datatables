@@ -37,6 +37,16 @@ class DatatableRenderer implements RenderInterface
     }
 
     /**
+     * Render the DataTable instantiation javascript code
+     */
+    public function renderJs()
+    {
+        $options = json_encode($this->renderDataTableOptions());
+        $js = "<script type=\"text/javascript\">$(document).ready(function(){var {$this->config->getTableId()} = $('#{$this->config->getTableId()}').dataTable({$options});});</script>";
+        return $js;
+    }
+
+    /**
      * Render the default table HTML
      *
      * @param DataResult $data
@@ -79,10 +89,10 @@ class DatatableRenderer implements RenderInterface
     protected function renderStaticData(DataResult $dataResult)
     {
         $data = $dataResult->getData();
-        $html = "";
+        $html = '';
 
         foreach ($data as $object) {
-            $row = "";
+            $row = '';
             foreach ($this->config->getColumns() as $column) {
                 $value = $this->getDataForColumn($object, $column);
 
@@ -118,16 +128,6 @@ class DatatableRenderer implements RenderInterface
         }
 
         return $accessor->getValue($object, $property);
-    }
-
-    /**
-     * Render the DataTable instantiation javascript code
-     */
-    public function renderJs()
-    {
-        $options = json_encode($this->renderDataTableOptions());
-        $js = "<script type=\"text/javascript\">$(document).ready(function(){var {$this->config->getTableId()} = $('#{$this->config->getTableId()}').dataTable({$options});});</script>";
-        return $js;
     }
 
     /**
