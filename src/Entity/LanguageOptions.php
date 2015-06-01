@@ -30,7 +30,7 @@ class LanguageOptions extends Option
      * @param mixed $oPaginate
      * @return $this
      */
-    public function setOPaginate(LanguageOptions $oPaginate)
+    public function setOPaginate(LanguagePagination $oPaginate)
     {
         $this->oPaginate = $oPaginate;
         return $this;
